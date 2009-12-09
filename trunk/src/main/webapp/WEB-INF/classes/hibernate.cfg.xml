@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory name="">
+  <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+  <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+
+  <property name="hibernate.connection.url">jdbc:mysql://localhost/portal</property>
+  <property name="hibernate.connection.username">root</property>
+  <property name="hibernate.connection.password"/>
+
+  <property name="hibernate.show_sql">true</property>
+  <property name="hibernate.format_sql">true</property>
+  <property name="hibernate.hbm2ddl.auto">validade</property>
+  <property name="hibernate.cache.provider_class">org.hibernate.cache.HashtableCacheProvider</property>
+  <mapping class="com.greenlemon.portalchamadoweb.model.Address"/>
+  <mapping class="com.greenlemon.portalchamadoweb.model.City"/>
+  <mapping class="com.greenlemon.portalchamadoweb.model.Classification"/>
+  <mapping class="com.greenlemon.portalchamadoweb.model.Corporation"/>
+  <mapping class="com.greenlemon.portalchamadoweb.model.Individual"/>
+  <mapping class="com.greenlemon.portalchamadoweb.model.Person"/>
+  <mapping class="com.greenlemon.portalchamadoweb.model.Service"/>
+  <mapping class="com.greenlemon.portalchamadoweb.model.ServiceProvider"/>
+  <mapping class="com.greenlemon.portalchamadoweb.model.ServiceRequest"/>
+  <mapping class="com.greenlemon.portalchamadoweb.model.State"/>
+ </session-factory>
+</hibernate-configuration>
